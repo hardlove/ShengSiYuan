@@ -13,7 +13,7 @@ open class Parent2(name: String) {
 
 }
 
-//子类型没有构造方法的时候 需要在每个二级构造方法后面直接或者间接的调用super来初始化父类
+//子类型没有一级构造方法的时候 需要在每个二级构造方法后面直接或者间接的调用super来初始化父类
 class Child2 : Parent2 {
     constructor(name: String, age: Int) : super(name) {
 

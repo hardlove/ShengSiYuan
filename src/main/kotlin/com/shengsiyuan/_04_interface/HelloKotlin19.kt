@@ -11,6 +11,7 @@ fun main() {
     //对象可以直接被调用 不用像类一样创建对象后再使用
     MyObject.method()
     MyTest.method() //调用方式有点静态方法 静态成员的感觉
+    MyTest.Companion.method()
 }
 
 //伴生对象

@@ -24,6 +24,8 @@ class EE {
 
     fun DD.hello() {
         method()//直接调用了DD已经拥有的方法和属性
+        this.method()
+        this@EE.method2()
         method2()//也可以使用所在类的方法和属性
         println("DD hello")
     }
@@ -31,6 +33,8 @@ class EE {
     fun DD.output() {
         println(toString())//其实调用的是DD的toString()
         println(this@EE.toString())//这样调用的是EE的toString()
+        this@EE.method2()
+        method2()
     }
 
     fun test() {
@@ -41,7 +45,7 @@ class EE {
 
 fun main() {
     var dd = DD()
-    // dd.hello() 不可用 因为hello是再EE内部声明的 作用域仅限EE
+//     dd.hello() 不可用 因为hello是再EE内部声明的 作用域仅限EE
 
     EE().test()
 }

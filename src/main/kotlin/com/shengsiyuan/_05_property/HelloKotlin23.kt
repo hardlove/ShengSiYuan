@@ -39,10 +39,13 @@ fun BB.a() = "b"
 fun myPrint() {
     var aa: AA = AA()
     var bb: AA = BB()
+    var cc = BB()
     println("-----------------")
     println(aa.a())
     println("-----------------")
     println(bb.a())
+    println("---------------")
+    println(cc.a())
 }
 
 //扩展方法和既有方法签名完全相同 既有函数优先级更高

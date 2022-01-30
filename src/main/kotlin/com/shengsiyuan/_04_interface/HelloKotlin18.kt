@@ -1,8 +1,11 @@
 package com.shengsiyuan._04_interface
 
+import com.carlos._04_interface.staticMethod
+
 open class BaseClass {
     open fun method() {
 
+        staticMethod()
     }
 }
 

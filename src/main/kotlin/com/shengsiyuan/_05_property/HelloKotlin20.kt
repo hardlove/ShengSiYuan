@@ -4,7 +4,7 @@ class ThePerson(address: String, name: String) {
     //java中的成员变量 kotlin中的属性
     //只读属性用val声明  只有get方法  没有set方法
     val age: Int
-        get() = 21
+        get() = 3
 
     //var表示变量 可读可写 get set都有
     var address: String = address

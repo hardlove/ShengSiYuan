@@ -9,8 +9,8 @@ class MyClass private constructor(userName: String) {
 
 }
 
-//如果以及构造方法没有任何注解货是可见性关键字修饰 那么constructor可以省略
-class MyClass2(var userName: String = "BB") {
+//如果一级（主）构造方法没有任何注解或者可见性关键字修饰 那么constructor可以省略
+class MyClass2 (var userName: String = "BB") {
     init {
         //初始化代码块
         println(userName)

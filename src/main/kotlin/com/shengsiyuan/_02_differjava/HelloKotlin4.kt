@@ -38,11 +38,25 @@ fun convert2Int(string: String): Int? {//加问号表示返回值可空
 //        return null
 //    }
 
-    return try {
+//    return try {
+//        string.toInt()
+//    } catch (ex: NumberFormatException) {
+//        null
+//    }
+
+//    val nothing: Int? = try {
+//        string.toInt()
+//    } catch (e: Exception) {
+//        null
+//    }
+//    return nothing
+
+    val nothing= try {
         string.toInt()
-    } catch (ex: NumberFormatException) {
+    } catch (e: Exception) {
         null
     }
+    return nothing
 }
 
 fun printMultiPly(a: String, b: String) {

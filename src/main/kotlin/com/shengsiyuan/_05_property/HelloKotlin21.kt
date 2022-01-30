@@ -5,7 +5,7 @@ package com.shengsiyuan._05_property
 // 属性不能拥有自定义的setter getter方法
 // 属性类型需要为非空，且不能是原生数据类型（Int Float Boolean）
 class TheClass {
-    lateinit var name: String //延迟初始化 kotlin不会再检测类生成对象的时候属性是否初始化
+      lateinit var name: String //延迟初始化 kotlin不会再检测类生成对象的时候属性是否初始化
 
     fun initName() {
         this.name = "张三"
