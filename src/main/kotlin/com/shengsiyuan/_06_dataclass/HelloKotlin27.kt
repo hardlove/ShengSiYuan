@@ -18,7 +18,7 @@ data class Person(val name: String, var age: Int, var address: String)
 
 
     关于数据类的继承要点
-    1、如果数据类中显示定义了equal hashCode toString方法或者是再数据类的父类中将这些方法声明为了final
+    1、如果数据类中显示定义了equal hashCode toString方法或者是在数据类的父类中将这些方法声明为了final
         那么这些方法不会再生成，会使用现成的
     2、如果父类拥有了 componentN 方法并且是open的 返回类型是兼容的类型 那么编译器就会在数据类中生成相应的 componentN方法
         并且重写父类中的这些方法，如果父类中的这些方法由于不兼容的签名或是被定义为final的 那么编译器就会报错
@@ -34,7 +34,7 @@ fun main() {
     println(person.name)
     println(person.copy(age = 55))
     println("---------------")
-    var (name, age, address) = person //解构写法 必须按顺序 不缺漏 不然数据对应错误
+    val (name, age, address) = person //解构写法 必须按顺序 不缺漏 不然数据对应错误
 
     println("$name $age $address")
 }
